@@ -1,0 +1,12 @@
+body, html {
+	width: 100%;
+	background-color: $light;
+	color: $grey;
+	font-family: $geo, 'Arial';
+}
+
+.scroll-blocked {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}

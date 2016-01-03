@@ -1,0 +1,85 @@
+#home {
+	h1.logo {
+		font-family: $geoMed;
+		font-size: 60px;
+		color: $red;
+		line-height: 80px;
+		text-align: center;
+		margin-top: 30px;
+		@extend %font-smoothing;
+	}
+	h2 {
+		font-family: $geo;
+		color: $grey;
+		font-size: 30px;
+		line-height: 38px;
+		text-align: center;
+		@extend %font-smoothing;
+	}
+	.container {
+		max-width: 700px;
+		width: 90%;
+		margin: 50px auto 70px auto;
+		border: 1px solid $grey;
+		border-radius: 5px;
+		padding: 27px 40px;
+		@extend %border-box;
+		background-color: white;
+		@include max-width(mobile) {
+			padding: 20px 20px 20px 0;
+		}
+		.item {
+			@extend .clearfix;
+			margin: 20px 0;
+			div.number {
+				float: left;
+				font-family: $geoBook;
+				color: $red;
+				font-size: 30px;
+				width: 10%;
+				@extend %font-smoothing;
+				@include max-width(mobile) {
+					text-align: center;
+					width: 20%;
+				}
+			}
+			div.article {
+				float: left;
+				width: 90%;
+				@include max-width(mobile) {
+					width: 80%;
+				}
+				h3 {
+					font-size: 20px;
+					line-height: 30px;
+					font-family: $geoBook;
+					@extend %font-smoothing;
+					a {
+						text-decoration: none;
+						color: $grey;
+						transition: all 0.15s;
+						&:hover {
+							color: $red;
+						}
+					}
+				}
+				p {
+					font-size: 12px;
+					line-height: 15px;
+					margin-left: 10px;
+					@extend %font-smoothing;
+				}
+			}
+		}	
+	}
+	footer {
+		position: relative;
+		margin: 0px 0 50px 0;
+		font-size: 12px;
+		text-align: center;
+		a {
+			color: $red;
+			text-decoration: none;
+		}
+	}
+}
