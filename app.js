@@ -56,7 +56,7 @@ passport.use(new Strategy(
 app.use(express.static('app'));
 app.set('views', './app/views')
 app.set('view engine', 'ejs');
-app.set('port', process.env.PORT || 8987);
+app.set('port', process.env.PORT || 80);
 
 var routes = require('./app/routes');
 
