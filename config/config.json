@@ -1,6 +1,6 @@
 {
   "development": {
-    "username": "root",
+    "username": "louisamiot",
     "password": null,
     "database": "doctype",
     "host": "127.0.0.1",
@@ -15,8 +15,8 @@
   },
   "production": {
     "username": "root",
-    "password": null,
-    "database": "database_production",
+    "password": "cocacola92",
+    "database": "doctype",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }
