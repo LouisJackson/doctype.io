@@ -1,0 +1,87 @@
+#admin {
+	h1.logo {
+		font-family: $geoMed;
+		font-size: 60px;
+		color: $red;
+		line-height: 80px;
+		text-align: center;
+		margin-top: 30px;
+		@extend %font-smoothing;
+	}
+	h2 {
+		font-family: $geo;
+		color: $grey;
+		font-size: 30px;
+		line-height: 38px;
+		text-align: center;
+		@extend %font-smoothing;
+	}
+	.container {
+		max-width: 700px;
+		width: 90%;
+		margin: 50px auto 70px auto;
+		border: 1px solid $grey;
+		border-radius: 5px;
+		padding: 27px 40px;
+		@extend %border-box;
+		background-color: white;
+		text-align: center;
+		@include max-width(mobile) {
+			padding: 20px 20px 20px 0;
+		}
+		.elem {
+			@extend .clearfix;
+			p {
+				width: 10%;
+				color: $red;
+				font-family: $geoMed;
+				text-align: center;
+				line-height:41px;
+			}
+			input {
+				width: 30%;
+				padding: 10px;
+				margin: 0;
+				@extend %border-box;
+				font-size: 14px;
+				outline: none;
+			}
+			p, input {
+				float: left;
+			}
+			margin: 10px 0;
+		}
+		.date {
+			text-align: center;
+			input {
+				padding: 10px;
+				font-size: 14px;
+				margin: 10px;
+			}
+		}
+		input[type='submit'] {
+			border: 1px solid $red;
+			background-color: $red;
+			color: white;
+			font-family: $geo;
+			font-size: 14px;
+			padding: 10px;
+			border-radius: 5px;
+			&:hover {
+				cursor: pointer;
+				background-color: white;
+				color: $red;
+			}
+		}
+	}
+	footer {
+		position: relative;
+		margin: 0px 0 50px 0;
+		font-size: 12px;
+		text-align: center;
+		a {
+			color: $red;
+			text-decoration: none;
+		}
+	}
+}

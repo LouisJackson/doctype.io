@@ -70,6 +70,52 @@
 					@extend %font-smoothing;
 				}
 			}
+		}
+		.email {
+			border-top: 1px solid #D3D3D3;
+			padding-top: 20px;
+			margin-top: 30px;
+			h3 {
+				font-size: 15px;
+				text-align: center;
+				font-family: $geoBook;
+				padding-bottom: 40px;
+				text-transform: uppercase;
+			}
+			form {
+				text-align: center;
+
+				input[type='email'] {
+					max-width: 300px;
+					width: 100%;
+					padding: 10px 20px; 
+					margin-right: 0;
+					outline: none;
+					font-size: 16px;
+					font-family: $geo;
+					border: 1px solid $grey;
+					border-radius: 5px 0px 0px 5px;
+				}
+				input[type='submit'] {
+					border: 1px solid $red;
+					background-color: $red;
+					color: white;
+					padding: 10px 20px;
+					font-size: 16px;
+					margin-left: 0;
+					font-family: $geo;
+					border-radius: 0px 5px 5px 0px;
+					&:hover {
+						cursor: pointer;
+						background-color: #FFF;
+						color: $red;
+					}
+				}
+			}
+			p.error-message {
+				padding: 20px 0;
+				color: #c0392b;
+			}
 		}	
 	}
 	footer {
